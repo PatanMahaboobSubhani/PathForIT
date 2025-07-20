@@ -1,0 +1,208 @@
+/* PathForIT Hero Section Styles */
+.hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    min-height: 60vh;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .hero-section {
+        flex-direction: row;
+        gap: 4rem;
+        padding: 2rem;
+    }
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero-content {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.hero-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+.brand-highlight {
+    color: #2563eb;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #16a34a;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-tagline {
+        font-size: 1.5rem;
+    }
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+    max-width: 32rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .hero-description {
+        font-size: 1.125rem;
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .hero-buttons {
+        justify-content: flex-start;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline {
+    border: 2px solid #2563eb;
+    color: #1d4ed8;
+    background-color: transparent;
+}
+
+.btn-outline:hover {
+    background-color: #dbeafe;
+}
+
+.btn-success {
+    background-color: #16a34a;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #15803d;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .hero-image {
+        justify-content: flex-end;
+    }
+}
+
+.logo {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.875rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.125rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        text-align: center;
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+/* Animation Effects */
+.hero-content {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.hero-image {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
